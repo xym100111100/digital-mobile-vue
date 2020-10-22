@@ -1,0 +1,148 @@
+body,
+html {
+    background-color: #f5f7f7;
+    height:100%;
+    font-family: "PingFang-Regular";
+}
+.common-field .mint-field .mint-cell-title {
+    width: 80px;
+}
+//基本公共样式
+.van-nav-bar {
+    color: #f00;
+    & .van-icon {
+        color: #3296FA;
+    }
+  .van-nav-bar__text {
+    color: #666;
+  }
+  .van-nav-bar__title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+  }
+    .van-nav-bar__text:active{
+      background-color: #fff;
+    }
+}
+#app{
+  font-size: 12px;
+  height: 100%;
+}
+.mall{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.demo{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+    padding: 46px 0 0;
+    height: 100%;
+}
+.e-tips {
+    padding-top: 15px;
+    line-height: 24px;
+    p {
+        margin: 0;
+    }
+}
+.btn-box {
+    padding: 20px;
+}
+//线条
+.line {
+    height: 1px;
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #d9d9d9 50%, transparent 50%);
+    background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+    background-size: 120% 1px;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+//按钮
+.van-button--large {
+    height: 40px;
+    line-height: 38px;
+}
+//.van-button--primary {
+//    background-color: #f44;
+//    border: 1px solid #f44;
+//}
+.van-button--default {
+    // margin-bottom: 20px;
+}
+.van-button--primary[disabled] {
+    background-color: #e8e8e8;
+    border: 1px solid #e5e5e5;
+}
+.van-cell-group{margin-top:-1px;}
+.is-danger {
+    border-bottom: 1px solid #f00;
+}
+//暂无数据
+.no-data {
+    text-align: center;
+    padding-top: 40px;
+    img {
+        width: 120px;
+    }
+}
+.hide{
+	display:none!important;
+}
+.show{
+	display:block!important;
+}
+.ds-flex{
+	display:flex!important;
+}
+
+.van-picker {
+  font-size: 18px;
+  & .van-picker__cancel, .van-picker__confirm{
+      color: #438EF7;
+    }
+}
+.loading-box{
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: rgb(242, 242, 242);
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width:2rem;
+    }
+}
+//清除浮动
+.clear:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0
+}
+.clear{zoom:1}
+.van-pull-refresh{
+  -webkit-overflow-scrolling: touch;
+}
+
+li{
+  list-style: none;
+}
+.flex2{
+  flex: 2;
+  word-wrap:break-word
+}
+
+// search搜索没有占满父元素宽度
+.van-field__body{
+  width: 100%;
+}

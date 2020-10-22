@@ -1,0 +1,136 @@
+{
+    "code": 200,
+    "msg": "获取首页数据成功",
+    "data": {
+        "govAffairsData": [
+            {
+                "title": "藤县大数据发展局暂停各类公共资源现场交易活动",
+                "url": "/govAffairsPublic/detail"
+            },
+            {
+                "title": "藤县召开2020年政法工作电视电话会议",
+                "url": "/govAffairsPublic/detail"
+            }
+        ],
+        "dataList": [
+            {
+                "title": "疫情专区",
+                "list": [
+                    {
+                        "img": "epidemic_platform.png",
+                        "name": "广西健康码管理平台"
+                    },
+                    {
+                        "img": "epidemic_ctrl_collect.png",
+                        "name": "防控线索征集"
+                    },
+                    {
+                        "img": "epidemic_help_collect.png",
+                        "name": "感染者求助征集"
+                    },
+                    {
+                        "img": "epidemic_ctrl.png",
+                        "name": "疫情防控"
+                    },
+                    {
+                        "img": "epidemic_people_query.png",
+                        "name": "广西密切人员查询"
+                    }
+                ]
+            },
+            {
+                "title": "便民服务",
+                "list": [
+                    {
+                        "img": "conv_accumulation.png",
+                        "name": "公积金",
+                        "label": "公积金查询 | 办事咨讯"
+                    },
+                    {
+                        "img": "conv_social_security.png",
+                        "name": "社保",
+                        "label": "电子社保卡 | 社保查询"
+                    },
+                    {
+                        "img": "conv_medical_insurance.png",
+                        "name": "医保",
+                        "label": "医保查询"
+                    },
+                    {
+                        "img": "conv_payment.png",
+                        "name": "生活缴费",
+                        "label": "水费 | 电费 | 天燃气"
+                    },
+                    {
+                        "img": "conv_recharge.png",
+                        "name": "充值中心",
+                        "label": "话费充值"
+                    },
+                    {
+                        "img": "conv_traffic.png",
+                        "name": "交通违法处理",
+                        "label": "交通处理"
+                    }
+                ],
+                "swipe2": [
+                    {
+                        "img": "recent_swipe_01.png"
+                    },
+                    {
+                        "img": "recent_swipe_02.png"
+                    },
+                    {
+                        "img": "recent_swipe_03.png"
+                    }
+                ]
+            },
+            {
+                "title": "电子税务局",
+                "list": [
+                    {
+                        "img": "tax_taxpayer_info.png",
+                        "name": "纳税人信息"
+                    },
+                    {
+                        "img": "tax_added1.png",
+                        "name": "增值税小规模纳税…"
+                    },
+                    {
+                        "img": "tax_bill.png",
+                        "name": "发票领用"
+                    },
+                    {
+                        "img": "tax_added2.png",
+                        "name": "增值税一般纳税人…"
+                    },
+                    {
+                        "img": "tax_account.png",
+                        "name": "存款账户账号报告"
+                    },
+                    {
+                        "img": "tax_apply.png",
+                        "name": "文化事业建设费申报"
+                    }
+                ]
+            },
+            {
+                "title": "公积金",
+                "list": [
+                    {
+                        "img": "accumulation_payment_query.png",
+                        "name": "个人缴存查询"
+                    }
+                ]
+            },
+            {
+                "title": "证件办理",
+                "list": [
+                    {
+                        "img": "certificate_progress.png",
+                        "name": "身份证办理进度"
+                    }
+                ]
+            }
+        ]
+    }
+}

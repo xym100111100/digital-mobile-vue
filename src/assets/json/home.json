@@ -1,0 +1,139 @@
+{
+    "code": 200,
+    "msg": "获取首页数据成功",
+    "data": {
+        "govAffairsData": [
+            {
+                "title": "藤县大数据发展局暂停各类公共资源现场交易活动",
+                "url": "/govAffairsPublic/detail"
+            },
+            {
+                "title": "藤县召开2020年政法工作电视电话会议",
+                "url": "/govAffairsPublic/detail"
+            }
+        ],
+        {
+            "dataList": [
+                {
+                    "title": "疫情专区",
+                    "list": [
+                        {
+                            "img": require("assets/images/epidemic_platform.png"),
+                            "name": "广西健康码管理平台"
+                        },
+                        {
+                            "img": require("assets/images/epidemic_ctrl_collect.png"),
+                            "name": "防控线索征集"
+                        },
+                        {
+                            "img": require("assets/images/epidemic_help_collect.png"),
+                            "name": "感染者求助征集"
+                        },
+                        {
+                            "img": require("assets/images/epidemic_ctrl.png"),
+                            "name": "疫情防控"
+                        },
+                        {
+                            "img": require("assets/images/epidemic_people_query.png"),
+                            "name": "广西密切人员查询"
+                        }
+                    ]
+                },
+                {
+                    "title": "便民服务",
+                    "list": [
+                        {
+                            "img": require("assets/images/conv_accumulation.png"),
+                            "name": "公积金",
+                            "label": "公积金查询 | 办事咨讯"
+                        },
+                        {
+                            "img": require("assets/images/conv_social_security.png"),
+                            "name": "社保",
+                            "label": "电子社保卡 | 社保查询"
+                        },
+                        {
+                            "img": require("assets/images/conv_medical_insurance.png"),
+                            "name": "医保",
+                            "label": "医保查询"
+                        },
+                        {
+                            "img": require("assets/images/conv_payment.png"),
+                            "name": "生活缴费",
+                            "label": "水费 | 电费 | 天燃气"
+                        },
+                        {
+                            "img": require("assets/images/conv_recharge.png"),
+                            "name": "充值中心",
+                            "label": "话费充值"
+                        },
+                        {
+                            "img": require("assets/images/conv_traffic.png"),
+                            "name": "交通违法处理",
+                            "label": "交通处理"
+                        }
+                    ],
+                    // 轮播
+                    "swipe": [
+                        {
+                            "img": require("assets/images/recent_swipe_01.png")
+                        },
+                        {
+                            "img": require("assets/images/recent_swipe_02.png")
+                        },
+                        {
+                            "img": require("assets/images/recent_swipe_03.png")
+                        }
+                    ]
+                },
+                {
+                    "title": "电子税务局",
+                    "list": [
+                        {
+                            "img": require("assets/images/tax_taxpayer_info.png"),
+                            "name": "纳税人信息"
+                        },
+                        {
+                            "img": require("assets/images/tax_added1.png"),
+                            "name": "增值税小规模纳税…"
+                        },
+                        {
+                            "img": require("assets/images/tax_bill.png"),
+                            "name": "发票领用"
+                        },
+                        {
+                            "img": require("assets/images/tax_added2.png"),
+                            "name": "增值税一般纳税人…"
+                        },
+                        {
+                            "img": require("assets/images/tax_account.png"),
+                            "name": "存款账户账号报告"
+                        },
+                        {
+                            "img": require("assets/images/tax_apply.png"),
+                            "name": "文化事业建设费申报"
+                        }
+                    ]
+                },
+                {
+                    "title": "公积金",
+                    "list": [
+                        {
+                            "img": require("assets/images/accumulation_payment_query.png"),
+                            "name": "个人缴存查询"
+                        }
+                    ]
+                },
+                {
+                    "title": "证件办理",
+                    "list": [
+                        {
+                            "img": require("assets/images/certificate_progress.png"),
+                            "name": "身份证办理进度"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

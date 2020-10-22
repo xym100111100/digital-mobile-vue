@@ -1,0 +1,1948 @@
+@import './base.scss'; // 基础变量或class
+
+
+html,
+body {
+    background: #F8F8F8;
+
+}
+
+.auu-page-main {
+    height: 100%;
+    background-color: #F8F8F8;
+
+    &.auu-bg-white {
+        background-color: #fff;
+
+    }
+}
+
+// 登录页面样式
+.auu-page1 {
+    height: 100%;
+    background: #F8F8F8;
+    // overflow: auto;
+
+    // 覆盖vant样式
+    &__nav.van-nav-bar {
+        background: #3787F1;
+
+        .van-nav-bar__title {
+            color: #fff;
+        }
+
+        .van-icon {
+            color: #fff;
+        }
+
+        &::after {
+            border-color: #3787F1;
+        }
+    }
+
+    &__header {
+        // background: #3787F1;
+        // background-image: url(../../../images/login_bg.png) no-repeat;
+        // background: url(../../../assets/images/login_bg.png);
+        background: url('../../../assets/images/login_bg.png');
+        background-size: 100% 100%;
+        height: 180px;
+    }
+
+    &__main {
+        width: 345px;
+        margin: 0 auto;
+        position: relative;
+        top: -50px;
+        background: #fff;
+        border-radius: 4px;
+        min-height: 470px;
+        overflow: hidden;
+    }
+
+    &__inner {
+        padding-top: 20px;
+    }
+
+    &__btns {
+        padding: 20px 20px 0;
+    }
+
+    &__btns2 {
+        padding: 10px 20px 0;
+    }
+
+    &__btn--simple {
+        font-size: 14px;
+        color: #666666;
+        cursor: pointer;
+    }
+
+}
+
+.auu-avatar1 {
+    padding: 30px 36px 0;
+    @include clearfix;
+
+    &__imgouter {
+        width: 64px;
+        height: 64px;
+        background: #fff;
+        float: left;
+        border-radius: 50%;
+        overflow: hidden;
+
+        >img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        float: left;
+        width: 235px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+.auu-btn1 {
+    width: 100%;
+    height: 42px;
+    background: linear-gradient(90deg, rgba(45, 191, 253, 1) 0%, rgba(55, 135, 241, 1) 100%);
+    border-radius: 24px;
+    overflow: hidden;
+    margin: auto;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    border: 0;
+    color: #fff;
+
+    &:disabled {
+        cursor: not-allowed;
+        background: #aaa;
+    }
+}
+
+//注册页面样式
+
+.auu-page2 {
+    height: 100%;
+    background: #F8F8F8;
+
+
+    &__nav.van-nav-bar {
+        background: #3787F1;
+
+        .van-nav-bar__title {
+            color: #fff;
+        }
+
+        .van-icon {
+            color: #fff;
+        }
+
+        &::after {
+            border-color: #3787F1;
+        }
+
+        .van-nav-bar__text {
+            color: #fff;
+        }
+    }
+
+    &__tabs.van-tabs {
+        padding-top: 20px;
+
+        .van-tabs__nav {
+            background: transparent;
+
+        }
+
+        .van-tabs__wrap {
+            &::after {
+                border-color: transparent;
+            }
+
+        }
+
+        .van-tabs__line {
+            background-color: #fff;
+        }
+
+        .van-tab {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .van-tab--active {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+
+    &__header {
+        background: url(../../../assets/images/register_bg.png);
+        background-size: 100% 100%;
+        height: 82px;
+    }
+
+    &__main {
+
+        background: #fff;
+        min-height: 470px;
+    }
+
+    &__inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__btns {
+        padding: 20px 20px 0;
+    }
+
+    &__btns2 {
+        padding: 10px 20px 0;
+        text-align: center;
+    }
+}
+
+.auu-page3 {
+    background: #fff;
+    height: 100%;
+}
+
+.auu-word {
+
+    color: $baseColor;
+    text-decoration: none;
+    font-size: 14px;
+
+    &--normal {
+        font-size: 14px;
+    }
+
+    &--large {
+        font-size: 16px;
+    }
+
+    &--small {
+        font-size: 12px;
+    }
+
+    &--mini {
+        font-size: 10px;
+    }
+
+    &--info {
+        color: $infoColor;
+        text-decoration: none;
+    }
+
+    &--black {
+        color: $fontColor;
+        text-decoration: none;
+    }
+
+    &--black-light {
+        color: $fontColorLight;
+        text-decoration: none;
+    }
+
+    &--success {
+        color: #00CA9B;
+        text-decoration: none;
+    }
+
+    &.is-bold {
+        font-weight: bold;
+    }
+
+    &.is-bolder {
+        font-weight: bolder;
+    }
+
+    &.is-middle {
+        font-weight: 600;
+    }
+
+}
+
+.auu-checkboxouter {
+    .van-checkbox {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__label {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+// 用户服务协议文本
+.auu-article1 {
+    padding: 10px 15px;
+    background: #fff;
+
+    &__title {
+        margin-top: 7px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #333333;
+    }
+
+    &__item {
+        margin: 14px 0;
+        font-size: 14px;
+        line-height: 24px;
+        color: #666666;
+    }
+}
+
+// 主页
+.auu-home {
+    position: relative;
+    height: 100%;
+
+    &__headbg {
+        height: 38px;
+        background: rgb(56, 136, 241);
+        display: none;
+    }
+
+    &__footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 48px;
+        display: flex;
+        z-index: 10;
+        background: #fff;
+
+    }
+
+    &__main {
+        // height: 100%;
+        // overflow: auto;
+        padding-bottom: 55px;
+        // box-sizing: border-box;
+    }
+
+    &__nav {
+
+        display: flex;
+        background: #fff;
+        padding: 8px 0;
+    }
+
+    &__item {
+        margin-top: 8px;
+        background: #fff;
+
+        @include boxShadow;
+
+        .van-cell__title {
+            color: $fontColor;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .van-cell__value {
+            color: #207BEE;
+        }
+
+        &-inner {
+            padding: 10px 15px;
+        }
+
+        &--recent &-inner {
+            padding: 10px 10px;
+        }
+    }
+
+    &__swipeitem {
+        padding-bottom: 15px;
+    }
+
+    &__swipe1 {
+        padding-bottom: 5px;
+        margin: 0 auto 15px;
+
+        .van-swipe__indicators {
+            bottom: 0;
+        }
+    }
+
+    &__swipe2 {
+        padding-bottom: 10px;
+        width: 345px;
+        height: 82px;
+        margin: 10px auto 5px;
+
+        .van-swipe-item {
+            >img {
+                width: 100%;
+                height: auto;
+
+                // 未加载的图片设置高度为0
+                &[lazy="loading"] {
+                    height: 0;
+                }
+
+                // 错误的图片 
+                &[lazy="error"] {
+                    height: 150px;
+                    background: url(../../../assets/images/placeholder.png);
+                    background-size: 100% 100%;
+                }
+            }
+        }
+
+        .van-swipe__indicators {
+            bottom: 0;
+        }
+    }
+
+    &__cards {
+        @include clearfix;
+        overflow: auto;
+        white-space: nowrap;
+
+        .auu-card {
+
+            margin-right: 10px;
+        }
+
+        div:last-child .auu-card {
+            margin-right: 0;
+        }
+    }
+
+}
+
+//主页头部
+.auu-home-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 38px;
+    display: flex;
+    color: #fff;
+    z-index: 1;
+    align-items: center;
+    // background-color: rgba(255, 255, 255, 0.2);
+    background: rgba(56, 136, 241, 0.2);
+    font-size: 14px;
+
+    &__left {
+        width: 70px;
+        text-align: center;
+        padding-right: 8px;
+        box-sizing: border-box;
+
+        .van-dropdown-menu__title {
+            color: #fff;
+        }
+    }
+
+    &__main {
+        flex: 1;
+
+        .van-search {
+            padding: 0;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .van-cell {
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+
+    &__prefix {
+        width: 40px;
+        text-align: center;
+    }
+
+    &__img {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__imgouter {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.auu-footitem {
+    flex: 1;
+    text-align: center;
+    padding-top: 5px;
+    // border-top: 1px solid #EBEBEB;
+    @include borderTop;
+    box-sizing: border-box;
+
+    &__img {
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: #999;
+    }
+
+    &.is-active &__label {
+        color: $baseColor;
+    }
+
+
+}
+
+.auu-nav-item {
+    flex: 1;
+    padding: 5px 0;
+    width: 100%;
+
+    &__img {
+        width: 28px;
+        height: 28px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 28px;
+        color: #333;
+        display: block;
+        text-align: center;
+        @include ove;
+    }
+
+    &--lg {
+        padding: 8px 0;
+    }
+
+    &--lg &__img {
+        width: 48px;
+        height: 48px;
+    }
+
+    &--lg2 {
+        padding: 8px 0;
+    }
+
+    &--lg2 &__img {
+        width: 44px;
+        height: 44px;
+    }
+
+    &--lg2 &__label {
+        color: #666;
+        // font-size: 14px;
+        line-height: 32px;
+
+    }
+
+    &--large {
+        padding: 8px 0;
+    }
+
+    &--large &__img {
+        width: 32px;
+        height: 32px;
+    }
+
+    &--large &__label {
+        color: #666;
+    }
+
+    &--small {
+        padding: 5px 0;
+    }
+
+    &--small &__img {
+        width: 20px;
+        height: 20px;
+    }
+
+    &--small &__label {
+        color: #666;
+        font-size: 13px;
+        line-height: 28px;
+
+    }
+
+}
+
+.auu-nav-item2 {
+    flex: 1;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    height: 32px;
+
+    &__img {
+        width: 32px;
+        height: 32px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__label {
+        flex: 1;
+        padding-left: 5px;
+        font-size: 13px;
+        line-height: 28px;
+        color: #666;
+        display: block;
+        text-align: left;
+        @include ove;
+    }
+
+    &__label2 {
+        flex: 1;
+        padding-left: 5px;
+        font-size: 13px;
+        line-height: 22px;
+        color: #666;
+        display: block;
+        text-align: left;
+        @include ove;
+    }
+
+    &__prefix {
+        // flex: 1;
+        // padding-left: 5px;
+        font-size: 10px;
+        line-height: 20px;
+        color: #999;
+        display: block;
+        text-align: left;
+        @include ove;
+    }
+
+
+
+}
+
+
+// 轮播图
+.auu-swipe {
+    width: 100%;
+    // height: 154px;
+    min-height: 40px;
+
+    .van-swipe-item {
+        >img {
+            width: 100%;
+            height: auto;
+
+            // 未加载的图片设置高度为0
+            &[lazy="loading"] {
+                height: 0;
+            }
+
+            // 错误的图片 
+            &[lazy="error"] {
+                height: 150px;
+                background: url(../../../assets/images/placeholder.png);
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.auu-badge {
+    position: relative;
+
+    &--dot {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        background: #E02020;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+.auu-badge2 {
+    position: relative;
+
+    &--dot {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(50%);
+    }
+}
+
+// 标签
+.auu-tag-wrapper {
+    padding: 10px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .auu-tag {
+        margin-bottom: 10px;
+    }
+}
+
+.auu-tag {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 8px;
+    color: $fontColor;
+    text-align: center;
+    background: #F4F4F4;
+    @include ove;
+
+    &--info {
+        color: $fontColorLight;
+    }
+
+    &.is-active {
+        background: url(../../../assets/images/tag_active.png);
+        background-size: 100% 100%;
+    }
+}
+
+// 评分标签
+.auu-tag2 {
+    font-size: 16px;
+    line-height: 32px;
+
+    color: $fontColor;
+    text-align: center;
+    background: #fff;
+    @include ove;
+
+    border: 1px solid #D7D7D7;
+    border-radius: 16px;
+
+    &.is-active {
+        color: #FAAB43;
+        border-color: #FAAB43;
+        font-weight: 600;
+
+    }
+}
+
+
+// 通用标题
+.auu-title1 {
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 10px;
+
+    &__label {
+        @include ove;
+        display: block;
+    }
+}
+
+.auu-title2 {
+    font-size: 15px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #333;
+    font-weight: bolder;
+    background: #fff;
+}
+
+.auu-title3 {
+    font-size: 14px;
+    line-height: 43px;
+    padding: 0 15px;
+    color: #3787F1;
+    font-weight: bolder;
+}
+
+
+
+.auu-text-line {
+    font-size: 14px;
+    line-height: 32px;
+    color: $fontColorLight;
+    @include ove;
+}
+
+// 身份证 社保等卡片
+.auu-card {
+    width: 288px;
+    height: 100px;
+    display: flex;
+    @include boxShadow;
+    border-radius: 4px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+
+    &__left {
+        width: 28px;
+    }
+
+    &__l_img {
+        width: 28px;
+        height: 20px;
+    }
+
+    &__main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        padding: 0 8px;
+        justify-content: space-around;
+        height: 100%;
+        box-sizing: border-box;
+
+    }
+
+    &__m_title {
+        font-size: 17px;
+        line-height: 20px;
+
+    }
+
+    &__m_code {
+        flex: 1;
+        font-size: 12px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 1px
+    }
+
+    &__m_label {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    &__right {
+        width: 62px;
+    }
+
+    &__r_btn1 {
+        width: 62px;
+        height: 22px;
+        border-radius: 2px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: #fff;
+        line-height: 22px;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__r_btn2 {
+        width: 52px;
+        height: 52px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        overflow: hidden;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &--large {
+        width: 348px;
+        height: 120px;
+        padding: 20px 20px;
+
+    }
+}
+
+// 身份证卡
+.auu-card2 {
+    width: 345px;
+    height: 194px;
+    color: #fff;
+
+    &__content {
+        height: 160px;
+        @include boxShadow;
+        border-radius: 4px;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    &__main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    &__title {
+        // font-size: 16px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__text {
+        font-size: 12px;
+        // font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1px
+    }
+
+    &__r_img {
+        width: auto;
+        height: 72px;
+    }
+
+    &__bottom {
+        height: 68px;
+        width: 68px;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: -34px;
+        margin: 0 auto;
+        @include boxShadow;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 58px;
+            height: 58px;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid #9F54BF;
+            border-radius: 50%;
+
+        }
+
+    }
+
+    &__b_img {
+        width: 34px;
+        height: 29px;
+        margin: 0 auto;
+    }
+
+    // 驾驶证
+    &--driver &__r_img {
+        // width: 80px;
+        // height: 72px;
+    }
+
+    &--driver &__bottom {
+        &::before {
+            border-color: #F84F4B;
+        }
+    }
+
+    // 行驶证
+    &--driving &__r_img {
+        // width: 86px;
+        // height: 70px;
+    }
+
+    &--driving &__bottom {
+        &::before {
+            border-color: #2CB653;
+        }
+    }
+
+}
+
+// 电子社保卡
+.auu-card3 {
+    // width: 345px;
+    // height: 160px;
+    // @include boxShadow;
+    // border-radius: 4px;
+    // padding: 15px;
+    // box-sizing: border-box;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-around;
+    // flex-direction: column;
+    // color: #fff;
+
+    width: 345px;
+    height: 194px;
+    color: #fff;
+
+    &__content {
+        height: 160px;
+        @include boxShadow;
+        border-radius: 4px;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    &__top {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__main {
+        flex: 1;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    &__m_left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    &__title {
+        // font-size: 16px;
+        font-size: 14px;
+        line-height: 20px;
+        display: inline;
+        margin-right: 10px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        display: inline;
+    }
+
+    &__r_img {
+        width: 72px;
+        height: 72px;
+    }
+
+    &__bottom {
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    &__out_bottom {
+        height: 68px;
+        width: 68px;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: -34px;
+        margin: 0 auto;
+        @include boxShadow;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 58px;
+            height: 58px;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid #2F9BFB;
+            border-radius: 50%;
+
+        }
+
+    }
+
+}
+
+// 政务公开列表
+.auu-list1 {
+    // border-bottom: 1px solid #F1F1F1;
+    @include borderBottom;
+    padding: 12px;
+    display: flex;
+    background-color: #fff;
+
+    &__main {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: left;
+        flex: 1;
+        padding-right: 6px;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 21px;
+        color: $fontColor;
+        flex: 1;
+    }
+
+    &__prefix {
+        font-size: 1px;
+        line-height: 21px;
+        color: #999;
+        flex: 1;
+        display: flex;
+        margin-top: 5px;
+        justify-content: flex-end;
+    }
+
+    &__label {
+        flex: 1;
+        width: 0;
+        @include ove;
+    }
+
+    &__time {
+        // flex: 1;
+        width: 110px;
+        text-align: right;
+        // width: 50px;
+    }
+
+    &__img {
+        width: 122px;
+        height: 66px;
+        margin-top: 2px;
+    }
+}
+
+// 政务公开详情
+.auu-article2 {
+    padding: 15px 0;
+    background: #fff;
+
+    @mixin paddingLR {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__title {
+        font-weight: 600;
+        color: #333333;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        @include paddingLR;
+    }
+
+    &__t_prefix {
+        padding: 7px 0 0;
+        font-size: 13px;
+        line-height: 28px;
+        color: #999;
+        text-align: center;
+
+        // border-bottom: 1px solid #F1F1F1;
+        @include borderBottom;
+
+        &>span {
+            padding: 0 5px;
+        }
+    }
+
+    &__img {
+        width: 347px;
+        height: 186px;
+        display: block;
+        margin: 8px auto;
+    }
+
+    &__title2 {
+        font-weight: 600;
+        color: #333333;
+        font-size: 16px;
+        line-height: 38px;
+        text-align: left;
+        @include paddingLR;
+
+    }
+
+    &__text {
+        color: #666;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        margin: 10px 0;
+        text-indent: 2em;
+        @include paddingLR;
+
+    }
+}
+
+// 富文本编辑器的文章
+.auu-article-editor {
+    box-sizing: border-box;
+    font-size: 16PX;
+    width: 100%;
+    overflow: auto;
+    line-height: 1.5;
+    // padding: 0 10px;
+
+    img,
+    video,
+    audio {
+        // max-width: 355px !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+// 办事大厅 大分类
+.auu-classify {
+    background: url(../../../assets/images/work_bg.png);
+    background-size: 100% 100%;
+    width: 72px;
+    height: 72px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+
+// 办事指南、办事中心列表
+.auu-list2 {
+
+    @include boxShadow;
+    margin-top: 8px;
+    background: #fff;
+
+    &__title {
+        font-size: 15px;
+        line-height: 38px;
+        color: $fontColor;
+        font-weight: bolder;
+        padding: 0 14px;
+        // border-bottom: 1px solid #F1F1F1;
+        @include borderBottom;
+        @include ove;
+    }
+
+    &__main {
+        padding: 8px 14px;
+        box-sizing: border-box;
+    }
+
+    &__label {
+        font-size: 14px;
+        color: #666;
+        line-height: 26px;
+    }
+
+    &__bottom {
+        // border-top: 1px solid #F1F1F1;
+        @include borderTop;
+        display: flex;
+        padding: 10px;
+    }
+
+    &__b_item {
+        color: #3787F1;
+        font-size: 13px;
+        flex: 1;
+        text-align: center;
+        // border-right: 1px solid #F1F1F1;
+        @include borderRight;
+
+        &:last-child {
+            border: none;
+        }
+
+        &.is-disabled {
+            color: #999;
+        }
+    }
+}
+
+// 办事指南详情 列表（表单）
+.auu-list3 {
+
+    $base: &;
+    // border-bottom: 1px solid #dedede;
+    background: #fff;
+    padding: 12px 15px;
+    display: flex;
+
+
+
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        flex: 1;
+        flex-shrink: 0;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    &__value {
+        font-size: 14px;
+        line-height: 20px;
+        color: #999;
+        flex: 2;
+        flex-shrink: 0;
+        text-align: right;
+        word-wrap: break-word;
+        word-break: break-all;
+
+        &.is-btn {
+            color: $baseColor;
+        }
+    }
+
+
+    // 换行
+    &--wrap {
+        display: block;
+
+        #{$base}__label {
+            margin-bottom: 5px;
+        }
+
+        #{$base}__value {
+            text-align: left;
+            line-height: 1.5;
+        }
+    }
+
+    &__icon {
+        font-size: 16px;
+
+    }
+
+    @include borderBottom;
+    margin-bottom: 1px;
+
+}
+
+// 社保卡缴存明细列表
+.auu-list4 {
+    padding: 5px 0;
+    margin-top: 6px;
+    @include boxShadow;
+    @include borderBottom;
+    background-color: #fff;
+
+    &__row {
+        display: flex;
+        padding: 2px 15px;
+    }
+
+    &__col {
+        flex: 1;
+        color: #999;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 26px;
+        color: #333;
+        font-weight: bolder;
+    }
+
+    &--highlight {
+        color: #DF3C3C;
+    }
+}
+
+// 个人中心头部
+.auu-mine-header {
+
+    $base: &;
+
+    height: 120px;
+    background: #3787F1;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        width: 52px;
+        height: 52px;
+    }
+
+    &__prefix {
+        width: 18px;
+        height: 18px;
+    }
+
+    &__icon {
+        font-size: 20px;
+
+    }
+
+    &__main {
+        flex: 1;
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 10px;
+    }
+
+    &--white {
+        background: #fff;
+        height: 100px;
+
+        #{$base}__avatar {
+            border-radius: 50%;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18)
+        }
+
+        #{$base}__main {
+            color: #333;
+        }
+    }
+}
+
+// 表单样式重置，用于个人中心
+.auu-form1 {
+    .van-field__left-icon {
+        margin-right: 8px;
+        padding-top: 2px;
+
+        .van-icon__image {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .van-field__right-icon {
+
+        .van-icon__image {
+            height: 14px;
+            width: auto;
+        }
+    }
+
+    .van-field__control {
+        color: #333;
+        font-size: 14px;
+    }
+
+    // 验证码图片
+    &__codeimg {
+        width: 88px;
+        height: 36px;
+    }
+
+    // 验证码label
+    &__codelabel {
+
+        line-height: 42px;
+    }
+}
+
+
+// 我的咨询、我的收藏、我的投诉、历史记录等列表
+.auu-list5 {
+
+    margin-top: 1px;
+    background: #fff;
+    padding: 6px 14px;
+    @include borderBottom;
+
+    &__title {
+        font-size: 15px;
+        line-height: 32px;
+        color: $fontColor;
+        font-weight: bolder;
+        @include ove;
+    }
+
+    &__label {
+        font-size: 13px;
+        color: #999;
+        line-height: 26px;
+        display: flex;
+
+        &-item {
+            flex: 1;
+            width: 0;
+            @include ove;
+        }
+
+        &-time {
+            width: 120px;
+            text-align: right;
+        }
+    }
+
+
+}
+
+//暂无数据
+.auu-nodata {
+    margin-top: 55px;
+
+    &__img {
+        display: block;
+        width: 114px;
+        height: 90px;
+        margin: 0 auto;
+    }
+
+    &__label {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #999;
+        text-align: center;
+    }
+}
+
+// 我的消息、系统消息等列表
+.auu-list6 {
+
+    margin-top: 1px;
+    background: #fff;
+    padding: 8px 0;
+    @include borderBottom;
+
+    display: flex;
+    position: relative;
+
+    &__main {
+        flex: 1;
+        width: 0;
+    }
+
+    &__img {
+        width: 28px;
+        height: 28px;
+        margin-left: 14px;
+        margin-top: 5px;
+
+        &--large {
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+
+
+
+    &__title {
+        font-size: 15px;
+        line-height: 28px;
+        color: $fontColor;
+        font-weight: bolder;
+        @include ove;
+        padding: 0 14px;
+
+    }
+
+    &__label {
+        font-size: 12px;
+        color: #999;
+        line-height: 24px;
+        padding: 0 14px;
+
+    }
+
+    &__content {
+        font-size: 14px;
+        color: #666;
+        line-height: 24px;
+        padding: 0 14px;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    &__dot {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 8px;
+        height: 8px;
+        background: #E02020;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+// 附件上传
+.auu-file1 {
+    background: #fff;
+    padding: 10px 15px;
+
+    &__title {
+        display: flex;
+        color: #333333;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        &-txt {
+            flex: 1;
+            width: 0;
+            @include ove;
+        }
+    }
+
+    &__item {
+        font-size: 14px;
+        line-height: 36px;
+        color: #666;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-label {
+        flex: 1;
+        width: 0;
+        @include ove;
+    }
+
+    &__close {
+        color: $dangerColor;
+        font-size: 20px;
+        line-height: 36px;
+
+    }
+
+    &__loading {
+        color: $baseColor;
+    }
+
+    &__percent {
+        color: $baseColor;
+    }
+
+    .is-highlight {
+        color: $baseColor;
+    }
+}
+
+// 二维码
+.auu-qrcode {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    // transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    width: 260px;
+    height: 260px;
+    z-index: 1000;
+    margin-left: -130px;
+    margin-top: -130px;
+
+    // 遮罩
+    &__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__close {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        right: -22px;
+        top: -22px;
+        background: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 48px;
+        color: #999;
+        overflow: hidden;
+        font-size: 26px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// 二维码2
+.auu-qrcode2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    // transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    width: 326px;
+    height: 400px;
+    z-index: 1000;
+    // transform: translate(-50%, -50%);
+    margin-left: -163px;
+    margin-top: -200px;
+
+    // 遮罩
+    &__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__close {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        right: -22px;
+        top: -22px;
+        background: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 48px;
+        color: #999;
+        overflow: hidden;
+        font-size: 26px;
+    }
+
+    &__label {
+        display: flex;
+        margin-top: 20px;
+        font-size: 14px;
+
+        &_l {
+            color: #999;
+            flex: 1;
+        }
+
+        &_r {
+            color: #529AFA;
+            width: 80px;
+            text-align: right;
+        }
+    }
+
+    &__barcode {
+        width: 250px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__twocode {
+
+
+        width: 180px;
+        height: 180px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
+// 二维码3
+.auu-qrcode3 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    // transform: translate(-50%, -50%);
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    width: 326px;
+    height: 370px;
+    z-index: 1000;
+    margin-left: -163px;
+    margin-top: -200px;
+
+    // 遮罩
+    &__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &__close {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        right: -22px;
+        top: -22px;
+        background: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 48px;
+        color: #999;
+        overflow: hidden;
+        font-size: 26px;
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    &__barcode {
+        width: 250px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    &__barcodelabel {
+        text-align: center;
+        margin-top: 5px;
+        line-height: 2;
+    }
+
+
+    &__twocode_wrap {
+        position: relative;
+        min-height: 96px;
+        margin-top: 40px;
+
+    }
+
+    &__twocode {
+        width: 96px;
+        height: 96px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__signet {
+        width: 72px;
+        height: 72px;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.auu-dot {
+    box-sizing: border-box;
+    min-width: 16px;
+    padding: 0 3px 1px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #ee0a24;
+    border-radius: 16px;
+}
+
+.auu-panel1 {
+    $base: &;
+    height: 105px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    overflow: hidden;
+
+    // 
+    &__img {
+        width: 100%;
+        height: 80px;
+        margin-bottom: -2px;
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+    }
+
+    &__label {
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        @include ove();
+
+
+    }
+
+    &--bg1 {
+        #{$base}__label {
+            background-color: rgb(251, 172, 109);
+        }
+    }
+
+    &--bg2 {
+        #{$base}__label {
+            background-color: rgb(109, 194, 251);
+        }
+    }
+
+    &--bg3 {
+        #{$base}__label {
+            background-color: rgb(251, 219, 109);
+        }
+    }
+
+    &--bg4 {
+        #{$base}__label {
+            background-color: rgb(128, 128, 255);
+        }
+    }
+
+    &--bg5 {
+        #{$base}__label {
+            background-color: rgb(236, 128, 141);
+        }
+    }
+
+    &--bg6 {
+        #{$base}__label {
+            background-color: rgb(149, 206, 55);
+        }
+    }
+
+}

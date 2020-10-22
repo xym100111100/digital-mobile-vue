@@ -1,0 +1,91 @@
+{
+    "code": 200,
+    "msg": "获取数据成功",
+    "data": {
+        "page": 1,
+        "rows": 10,
+        "total": 14,
+        "results": [
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            },
+            {
+                "title": "特种作业操作证的考核、发证、复审（复审、换证）",
+                "organization": "南宁市行政审批局",
+                "statutory": "20个工作日",
+                "promise": "20个工作日",
+                "consultationMethod": "服务中心2楼B520窗口 0772-5654578",
+                "url": "/workHall/workGuideDetail"
+            }
+        ]
+    }
+}

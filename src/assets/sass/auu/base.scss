@@ -1,0 +1,524 @@
+// $borderColor: #ebeef5;
+// $mainColor: #409EFF;
+// $successColor: #67C23A;
+// $successColor_light1: rgb(225, 243, 216);
+// $successColor_light2: rgb(240, 249, 235);
+// $warningColor: #E6A23C;
+// $warningColor_lignt1: rgb(250, 236, 216);
+// $warningColor_lignt2: rgb(253, 246, 236);
+// $dangerColor: #F56C6C;
+// $dangerColor_light1: rgb(253, 226, 226);
+// $dangerColor_light2: rgb(254, 240, 240);
+// $infoColor: #909399;
+// $infoColor_light1: rgb(233, 233, 235);
+// $infoColor_light2: rgb(244, 244, 245);
+// $fontColor1: #303133;
+// $fontColor2: #606266;
+// $fontColor3: #909399;
+// $fontColor4: #C0C4CC;
+// $borderColor1: #DCDFE6;
+// $borderColor2: #E4E7ED;
+// $borderColor3: #EBEEF5;
+// $borderColor4: #F2F6FC;
+$baseColor:#3787F1;
+$fontColor:#333; // 正常文字
+$fontColorLight:#666; // 稍浅的文字
+$infoColor:#979797;
+
+$dangerColor:#E02020;
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: '\20';
+        display: block;
+        height: 0;
+    }
+
+    zoom: 1;
+}
+
+@mixin ove {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+@mixin boxShadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.auu-bg-main {
+    background: #F8F8F8;
+}
+
+.auu-bg-white {
+    background: #fff;
+}
+
+// 渐变背景
+.auu-bg-linear1 {
+    background: linear-gradient(90deg, rgba(75, 211, 248, 1) 0%, rgba(45, 152, 251, 1) 100%);
+}
+
+.auu-bg-linear2 {
+    background: linear-gradient(90deg, rgba(173, 158, 248, 1) 0%, rgba(159, 81, 189, 1) 100%);
+}
+
+.auu-bg-linear3 {
+    background: linear-gradient(90deg, rgba(249, 126, 88, 1) 0%, rgba(248, 79, 75, 1) 100%);
+}
+
+.auu-bg-linear4 {
+    background: linear-gradient(90deg, rgba(75, 225, 161, 1) 0%, rgba(43, 181, 81, 1) 100%);
+}
+
+.auu-bg-linear5 {
+    background: linear-gradient(90deg, rgba(250, 175, 65, 1) 0%, rgba(249, 105, 47, 1) 100%);
+}
+
+.auu-color-white {
+    color: #fff;
+}
+
+.auu-color-font {
+    color: $fontColor;
+}
+
+.auu-color-font-light {
+    color: $fontColorLight;
+}
+
+.auu-color-info {
+    color: $infoColor;
+}
+
+.auu-color-danger {
+    color: $dangerColor;
+}
+
+.auu-color-1 {
+    color: #3787F1;
+}
+
+.auu-color-2 {
+    color: #A054BF;
+
+}
+
+.auu-color-3 {
+    color: #F84F4B;
+}
+
+.auu-color-4 {
+    color: #2CB653;
+}
+
+.auu-color-5 {
+    color: #F96B30;
+}
+
+.auu_ove {
+    @include ove;
+}
+
+.auu_csp {
+    cursor: pointer;
+}
+
+.auu_csa {
+    cursor: auto;
+}
+
+.auu_fl {
+    float: left;
+}
+
+.auu_fr {
+    float: right;
+}
+
+.auu_clearfix {
+    @include clearfix;
+}
+
+.auu_tl {
+    text-align: left;
+}
+
+.auu_tr {
+    text-align: right;
+}
+
+.auu_tc {
+    text-align: center;
+}
+
+.auu_dpn {
+    display: none;
+}
+
+.auu_dpi {
+    display: inline
+}
+
+.auu_dpib {
+    display: inline-block
+}
+
+.auu_dpb {
+    display: block
+}
+
+.auu_dpn_imp {
+    display: none !important;
+}
+
+.auu_dpb_imp {
+    display: block !important;
+}
+
+.auu_pr {
+    position: relative;
+}
+
+.auu_pa {
+    position: absolute;
+}
+
+.auu_shadow {
+    @include boxShadow;
+}
+
+.auu_shadow_none {
+    box-shadow: none !important;
+}
+
+.auu_flex_wrap {
+    display: flex;
+}
+
+.auu_flex_1 {
+    flex: 1;
+}
+
+.auu_flex_2 {
+    flex: 2;
+}
+
+.auu_flex_3 {
+    flex: 3;
+}
+
+// .auu_pd0 {
+//     padding: 0 !important;
+// }
+
+// .auu_pd10 {
+//     padding: 10px !important;
+// }
+
+// .auu_pdlr0 {
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
+
+// .auu_pdlr10 {
+//     padding-left: 10px !important;
+//     padding-right: 10px !important;
+// }
+
+// .auu_pdtb0 {
+//     padding-top: 0 !important;
+//     padding-bottom: 0 !important;
+// }
+
+// .auu_pdtb5 {
+//     padding-top: 5px !important;
+//     padding-bottom: 5px !important;
+// }
+
+// .auu_pdtb10 {
+//     padding-top: 10px !important;
+//     padding-bottom: 10px !important;
+// }
+
+// .auu_pt0 {
+//     padding-top: 0 !important;
+// }
+
+// .auu_pb0 {
+//     padding-bottom: 0 !important;
+// }
+
+// .auu_pr20 {
+//     padding-right: 20px !important;
+// }
+
+// .auu_mg15{
+//     margin: 15px;
+// }
+
+// .auu_mt0 {
+//     margin-top: 0 !important;
+// }
+
+// .auu_mt5 {
+//     margin-top: 5px;
+// }
+
+// .auu_mt8 {
+//     margin-top: 8px;
+// }
+
+// .auu_mt10 {
+//     margin-top: 10px;
+// }
+
+// .auu_mb0 {
+//     margin-bottom: 0 !important;
+// }
+
+// .auu_mb8 {
+//     margin-bottom: 8px !important;
+// }
+
+// .auu_mb10 {
+//     margin-bottom: 10px !important;
+// }
+
+// .auu_mgauto {
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .auu_mglr10 {
+//     margin-left: 10px !important;
+//     margin-right: 10px !important;
+// }
+
+// .auu_mglr5 {
+//     margin-left: 5px !important;
+//     margin-right: 5px !important;
+// }
+
+// .auu_w100p {
+//     width: 100%;
+// }
+
+// .auu_maxw40p {
+//     max-width: 40%;
+// }
+
+// .auu_maxw50p {
+//     max-width: 50%;
+// }
+
+// .auu_h100p {
+//     height: 100%;
+// }
+
+
+@mixin borderAfter {
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    // border: 0 solid #F1F1F1;
+    border: 0 solid #ddd;
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+}
+
+// 如果边框看不到，需要加上margin隔开
+@mixin border {
+    position: relative;
+
+    &::after {
+        @include borderAfter;
+        border-width: 1px !important;
+    }
+}
+
+@mixin borderTop {
+    position: relative;
+
+    &::after {
+        @include borderAfter;
+        border-top-width: 1px !important;
+    }
+}
+
+@mixin borderBottom {
+    position: relative;
+
+    &::after {
+        @include borderAfter;
+        border-bottom-width: 1px !important;
+    }
+}
+
+@mixin borderLeft {
+    position: relative;
+
+    &::after {
+        @include borderAfter;
+        border-left-width: 1px !important;
+    }
+}
+
+@mixin borderRight {
+    position: relative;
+
+    &::after {
+        @include borderAfter;
+        border-right-width: 1px !important;
+    }
+}
+
+.auu_border {
+    @include border;
+
+    &--top {
+        @include borderTop;
+    }
+
+    &--bottom {
+        @include borderBottom;
+    }
+
+    &--left {
+        @include borderLeft;
+    }
+
+    &--right {
+        @include borderRight;
+    }
+
+    &--none {
+        &::after {
+            border: none !important;
+        }
+    }
+}
+
+// 宽高,margin padding px
+$numbers: (0)(1)(2)(3) (5) (8) (10) (12) (15) (20) (30)(50);
+
+@each $num in $numbers {
+    $i: index($numbers, $num);
+
+    .auu_w#{$num} {
+        width: $num+px;
+    }
+
+    .auu_h#{$num} {
+        height: $num+px;
+    }
+
+    .auu_pd#{$num} {
+        padding: $num+px !important;
+    }
+
+    .auu_mg#{$num} {
+        margin: $num+px !important;
+    }
+
+    .auu_pdlr#{$num} {
+        padding-left: $num+px !important;
+        padding-right: $num+px !important;
+    }
+
+    .auu_pdtb#{$num} {
+        padding-top: $num+px !important;
+        padding-bottom: $num+px !important;
+    }
+
+    .auu_mglr#{$num} {
+        margin-left: $num+px !important;
+        margin-right: $num+px !important;
+    }
+
+    .auu_mgtb#{$num} {
+        margin-top: $num+px !important;
+        margin-bottom: $num+px !important;
+    }
+
+    .auu_pt#{$num} {
+        padding-top: $num+px !important;
+    }
+
+    .auu_pb#{$num} {
+        padding-bottom: $num+px !important;
+    }
+
+    .auu_pl#{$num} {
+        padding-left: $num+px !important;
+    }
+
+    .auu_pr#{$num} {
+        padding-right: $num+px !important;
+    }
+
+    .auu_mt#{$num} {
+        margin-top: $num+px !important;
+    }
+
+    .auu_mb#{$num} {
+        margin-bottom: $num+px !important;
+    }
+
+    .auu_ml#{$num} {
+        margin-left: $num+px !important;
+    }
+
+    .auu_mr#{$num} {
+        margin-right: $num+px !important;
+    }
+
+}
+
+
+
+$numbers2: (10) (20) (25) (50) (100);
+
+@each $num in $numbers2 {
+    $i: index($numbers2, $num);
+
+    .auu_w#{$num}p {
+        width: percentage($num/100);
+    }
+
+    .auu_maxw#{$num}p {
+        max-width: percentage($num/100);
+    }
+
+    .auu_minw#{$num}p {
+        min-width: percentage($num/100);
+    }
+
+    .auu_h#{$num}p {
+        height: percentage($num/100);
+    }
+
+    .auu_maxh#{$num}p {
+        max-height: percentage($num/100);
+    }
+
+    .auu_minh#{$num}p {
+        min-height: percentage($num/100);
+    }
+
+}
+
+.auu_mgauto {
+    margin-left: auto;
+    margin-right: auto;
+}

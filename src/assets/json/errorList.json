@@ -1,0 +1,10 @@
+{
+    "code": 500,
+    "msg": "获取数据失败",
+    "data": {
+        "page": 1,
+        "rows": 10,
+        "total": 0,
+        "results": []
+    }
+}

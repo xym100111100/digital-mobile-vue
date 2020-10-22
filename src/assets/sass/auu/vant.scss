@@ -1,0 +1,163 @@
+@import './base.scss'; // 基础变量或class
+
+
+
+.van-tabs__line {
+    background-color: $baseColor;
+}
+
+.van-tab {
+    color: #333;
+    font-size: 16px;
+}
+
+.van-tab--active {
+    color: $baseColor;
+    font-weight: 600;
+}
+
+// 轮播图小图标 矩形
+.auu-vant-swipe--indicator-rect {
+    .van-swipe__indicator {
+        width: 9px;
+        height: 3px;
+        border-radius: 0;
+    }
+}
+
+.auu-vant-tabs-1 {
+    .van-tab {
+        color: #999;
+        font-size: 16px;
+    }
+
+    .van-tab--active {
+        color: $baseColor;
+        font-weight: 600;
+    }
+
+
+}
+
+
+.auu-vant-tabs-2 {
+    .van-tab {
+        color: #333;
+        font-size: 14px;
+    }
+
+    .van-tab--active {
+        color: $baseColor;
+        font-weight: normal;
+    }
+}
+
+.auu-vant-tabs-3 {
+    &.van-tabs--card>.van-tabs__wrap {
+        height: auto;
+    }
+
+    .van-tabs__nav--card {
+        margin: 0;
+        border: none;
+        height: 41px;
+
+        .van-tab {
+            color: #666;
+            font-size: 16px;
+            line-height: 41px;
+            border: none;
+            background: #EBF4FE;
+        }
+
+        .van-tab.van-tab--active {
+            color: #333;
+            font-weight: bolder;
+            background: #fff;
+            height: 41px;
+
+        }
+    }
+
+
+
+}
+
+// 无边框
+.auu-van-cell-bd0::after {
+    border: none !important;
+}
+
+// 默认边框颜色
+[class^=van-hairline],
+[class*=van-hairline] {
+    &::after {
+        border-color: #F1F1F1;
+    }
+}
+
+// search
+.auu-van-search-1 {
+    .van-search__content {
+        // background-color: #fff;
+        @include border;
+    }
+
+    .van-search__action {
+        line-height: 0;
+    }
+
+    .van-button {
+        height: 34px;
+        font-size: 14px;
+
+        .van-icon {
+            font-size: 16px;
+            margin-right: 5px;
+            position: relative;
+            top: 3px;
+        }
+    }
+
+
+}
+
+// 按钮
+.auu-van-button-1 {
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.auu-van-button-2 {
+    font-size: 15px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+}
+
+// input文本
+.auu-vant-input-1 {
+    .van-field__control {
+        color: #999;
+    }
+}
+
+// loading
+.van-loading__spinner--default {
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
+.van-multi-ellipsis--l2,
+.van-multi-ellipsis--l3 {
+
+    // build后会丢失，需要单独关闭自动补全
+    // /*! autoprefixer: off */
+    // -webkit-box-orient: vertical;
+    // /* autoprefixer: on */
+
+    // 上面是原来的写法，但是控制台报警告
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}

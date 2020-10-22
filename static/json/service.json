@@ -1,0 +1,183 @@
+{
+    "code": 200,
+    "msg": "获取首页数据成功",
+    "data": [
+        {
+            "title": "税收财政",
+            "list": [
+                {
+                    "name": "出口退税查询",
+                    "img": "tax_exitus.png"
+                },
+                {
+                    "name": "A级纳税名单",
+                    "img": "tax_A_level.png"
+                },
+                {
+                    "name": "税收违法案件",
+                    "img": "tax_case.png"
+                },
+                {
+                    "name": "办税指南",
+                    "img": "tax_guide.png"
+                },
+                {
+                    "name": "办税日历",
+                    "img": "tax_calendar.png"
+                },
+                {
+                    "name": "办税地图",
+                    "img": "tax_map.png"
+                },
+                {
+                    "name": "税收政策法规",
+                    "img": "tax_policy.png"
+                },
+                {
+                    "name": "问卷调查",
+                    "img": "tax_questionnaire.png"
+                },
+                {
+                    "name": "热点问题",
+                    "img": "tax_hotspot.png"
+                },
+                {
+                    "name": "税收政策解读",
+                    "img": "tax_policy_interpretation.png"
+                },
+                {
+                    "name": "社保缴费",
+                    "img": "tax_social_security_payment.png"
+                },
+                {
+                    "name": "纳税状态",
+                    "img": "tax_status.png"
+                },
+                {
+                    "name": "发票查询",
+                    "img": "tax_bill_query.png"
+                },
+                {
+                    "name": "欠税公告查询",
+                    "img": "tax_notice_query.png"
+                },
+                {
+                    "name": "证明信息查询",
+                    "img": "tax_proof_info.png"
+                },
+                {
+                    "name": "预约办税",
+                    "img": "tax_appointment.png"
+                },
+                {
+                    "name": "互动问答",
+                    "img": "tax_interactive.png"
+                },
+                {
+                    "name": "纳税人信息",
+                    "img": "tax_payer_info.png"
+                },
+                {
+                    "name": "欠税信息查询",
+                    "img": "tax_info_query.png"
+                },
+                {
+                    "name": "涉税服务",
+                    "img": "tax_service.png"
+                }
+            ]
+        },
+        {
+            "title": "交通出行",
+            "list": [
+                {
+                    "name": "包车运营查询",
+                    "img": "traffic_chartered_bus.png"
+                },
+                {
+                    "name": "资格证查询",
+                    "img": "traffic_qualification_info.png"
+                },
+                {
+                    "name": "机动车信息",
+                    "img": "traffic_vehicle_info.png"
+                },
+                {
+                    "name": "违章信息",
+                    "img": "traffic_violation_info.png"
+                },
+                {
+                    "name": "拖车查询",
+                    "img": "traffic_trailer_query.png"
+                },
+                {
+                    "name": "交通设施报障",
+                    "img": "traffic_report_obstacles.png"
+                }
+            ]
+        },
+        {
+            "title": "出入境",
+            "list": [
+                {
+                    "name": "出入境",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "出入境",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "出入境",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "出入境",
+                    "img": "recent_accumulation.png"
+                }
+            ]
+        },
+        {
+            "title": "人才教育",
+            "list": [
+                {
+                    "name": "人才教育",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "人才教育",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "人才教育",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "人才教育",
+                    "img": "recent_accumulation.png"
+                }
+            ]
+        },
+        {
+            "title": "证件办理",
+            "list": [
+                {
+                    "name": "证件办理",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "证件办理",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "证件办理",
+                    "img": "recent_accumulation.png"
+                },
+                {
+                    "name": "证件办理",
+                    "img": "recent_accumulation.png"
+                }
+            ]
+        }
+    ]
+}

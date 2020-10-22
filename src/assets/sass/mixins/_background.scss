@@ -1,0 +1,21 @@
+@mixin background ($color, $url, $repeat, $positionX, $positionY, $size) {
+  background: url($url + ".png");
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $positionX $positionY;
+  background-color: $color;
+  @media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2){
+    background: url($url + "@2x.png");
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $positionX $positionY;
+    background-color: $color;
+  };
+  @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3){
+    background: url($url + "@3x.png");
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $positionX $positionY;
+    background-color: $color;
+  }
+}
