@@ -41,22 +41,52 @@ export default {
   name: "login",
   data() {
     return {
-      username: "",
-      password: "",
-      code: "",
-      uuid: "",
+      username: "2",
+      password: "3",
+      code: "4",
+      uuid: "5",
       imgCode: "",
     };
   },
   methods: {
     userLogin() {
-      this.goPage('/home')
+      let params = {
+        username: this.username,
+        password: this.password,
+        code: this.code,
+        uuid: this.uuid,
+      
+      };
+
+      this.axios
+        .doPost({
+          url: "login",
+          loading: true,
+          data: params,
+        })
+        .then((data) => {
+          console.log("登陆返回", data);
+        })
+        .catch((error) => {
+          this.$toast.fail(error.msg);
+        });
     },
     captchaImage() {
       console.log("sss");
-      // captchaImageData().then((res) => {
-      //   console.log(res);
-      // });
+
+      this.axios
+        .doGet({
+          url: "captchaImage",
+          loading: true,
+          data: {},
+        })
+        .then((data) => {
+          console.log("--------------");
+          console.log(data);
+        })
+        .catch((error) => {
+          this.$toast.fail(error.msg);
+        });
     },
     goPage(url) {
       // 切记子主路由切换的时候使用replace

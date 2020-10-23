@@ -21,8 +21,8 @@ let resourcePath ='http://172.20.11.31:8686'; // 资源路径
 if (process.env.NODE_ENV == 'development') {
 
   // 藤州
-  baseUrl = `http://172.20.11.31:6066/${httpserver.web_service_name1}`;
-  fileUrl = `http://172.20.11.31:6066/${httpserver.web_service_name2}`;
+  baseUrl = `http://172.20.11.81:7512/${httpserver.web_service_name1}`;
+  fileUrl = `http://172.20.11.81:7512/${httpserver.web_service_name2}`;
 
   // baseUrl = `http://172.20.11.55:6066/${httpserver.web_service_name1}`;
   // fileUrl = `http://172.20.11.55:6066/${httpserver.web_service_name2}`;

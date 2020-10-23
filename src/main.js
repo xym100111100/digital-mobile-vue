@@ -76,10 +76,11 @@ router.beforeEach((to, from, next) => {
 //路由拦截
 router.beforeEach((to, from, next) => {
 
-
+  
 
   //登录页面
   if ("/" === to.path && localStorage.getItem("userData")) {
+    
     sessionStorage.setItem('userData', localStorage.getItem("userData"));
     next({
       path: '/home'
@@ -93,18 +94,18 @@ router.beforeEach((to, from, next) => {
     }else {
        next();
 
-      // Dialog.confirm({
-      //   message: '还未登录不能访问该页面！！',
-      //   cancelButtonText:"暂不",
-      //   confirmButtonText:"现在去"
-      // }).then(() => {
-      //   next({
-      //     path: '/',
-      //     query: {redirect: to.fullPath}  // 将跳转的路由path作为参数，登录成功后跳转到该路由
-      //   })
-      // }).catch(() => {
-      //   console.log(to)
-      // });
+      Dialog.confirm({
+        message: '还未登录不能访问该页面！！',
+        cancelButtonText:"暂不",
+        confirmButtonText:"现在去"
+      }).then(() => {
+        next({
+          path: '/',
+          query: {redirect: to.fullPath}  // 将跳转的路由path作为参数，登录成功后跳转到该路由
+        })
+      }).catch(() => {
+        console.log(to)
+      });
     }
   }
   else {

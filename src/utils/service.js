@@ -29,18 +29,19 @@ const service = {
     var dataStr = JSON.parse(JSON.stringify(temp_param.data).replace(/<[^>]+>/g, ""));
     temp_param.data = Object.assign({}, temp_param.data, dataStr);
     //检查接口是否在存在配置中
-    if (httpserver['serviceurl'].hasOwnProperty(url)) {
-      temp_param.url = httpserver['serviceurl'][url];
-      // console.log(temp_param.url)
-    } else if (httpserver['staticUrl'].hasOwnProperty(url)) {
-      temp_param.url = httpserver['staticUrl'][url];
-      temp_param.method = 'GET'; // 本地json只支持get请求
-    } else {
-      throw new Error("请填入合法的url,检查utils/httpserver.js中serviceurl配置!");
-    }
+    // if (httpserver['serviceurl'].hasOwnProperty(url)) {
+    //   temp_param.url = httpserver['serviceurl'][url];
+    //   // console.log(temp_param.url)
+    // } else if (httpserver['staticUrl'].hasOwnProperty(url)) {
+    //   temp_param.url = httpserver['staticUrl'][url];
+    //   temp_param.method = 'GET'; // 本地json只支持get请求
+    // } else {
+    //   throw new Error("请填入合法的url,检查utils/httpserver.js中serviceurl配置!");
+    // }
     return this.doAxios(temp_param);
   },
   doAxios: function (params) {
+
     var dataStr = '';
     var URL = '';
     if (params.requestUrl == '0') {
@@ -54,14 +55,15 @@ const service = {
     if (isStatic) {
       URL = env.staticPath;
     }
-
+    
+    dataStr = params.data
     //  printLog("请求参数:");
     //  printLog(params.data);
-    if (params.encryption) {
-      dataStr = des.encryptJsonStr(params.data); //加密请求数据
-    } else {
-      dataStr = JSON.stringify(params.data);
-    }
+    // if (params.encryption) {
+    //   dataStr = des.encryptJsonStr(params.data); //加密请求数据
+    // } else {
+    //   dataStr = JSON.stringify(params.data);
+    // }
     //创建axios实例
     const axiosInstance = axios.create({
       baseURL: URL, //api的baseURL
@@ -94,23 +96,23 @@ const service = {
     //添加response 拦截器
     axiosInstance.interceptors.response.use(function (response) {
       params.loading && Toast.clear();
-      
+
       var data = response.data;
       //对respone data 做。。。。
-      
-      
+      console.log("服务器返回结果:", data);
+
 
       // 是否是静态json请求
       let isStatic = typeof params.isStatic === 'boolean' ? params.isStatic : false;
 
-      if (!isStatic && params.encryption) {
-        // printLog("服务器返回结果:");
-        
-        // console.log('data:', JSON.parse( des.decryptByDES(data)));
-        data = des.decryptByDES(data);
-      }
+      // if (!isStatic && params.encryption) {
+      //   // printLog("服务器返回结果:");
+
+      //   // console.log('data:', JSON.parse( des.decryptByDES(data)));
+      //  // data = des.decryptByDES(data);
+      // }
       try {
-        
+
         //判断objec是否是对象，如果data已经是对象，不用转换
         if (typeof data !== 'object') {
           data = JSON.parse(data);
